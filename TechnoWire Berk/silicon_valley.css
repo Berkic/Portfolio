@@ -1,0 +1,257 @@
+body {
+  /*background-image: url(3D.jpg);*/
+  background-color: deepskyblue;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: whitesmoke;
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: 0;
+  font-family: 'Agency FB Bold', arial;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: -4px;
+  font-size: large;
+  font-family: 'Agency FB Bold', arial;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.split {
+  margin-top: 524px;
+}
+
+#sv {
+  background-color: blue;
+  color: white;
+}
+
+.timeline {
+  margin-top: -700px;
+  margin-left: 150px;
+  position: relative;
+  max-width: 1200px;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+  margin-left: -180px;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.container:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.container:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.container:nth-child(7) {
+  animation-delay: 6s;
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 1px;
+  font-size: 16px;
+  font-family: 'Agency FB Bold', arial;
+  border: 3px solid black;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 55%;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  margin-left: 496px;
+  z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: -13px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -13px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.nav {
+  margin-left: 1318px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .timeline {
+    margin-left: -10px;
+    margin-top: 50px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .timeline::after {
+    margin-left: 25px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -14px;
+  }
+
+  .text-box {
+    width: 200px;
+    margin-left: 200px;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: whitesmoke;
+  color: white;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropbtn img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 1px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb 0, 17, 255;}
+
+}
